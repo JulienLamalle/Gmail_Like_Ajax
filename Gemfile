@@ -42,6 +42,8 @@ gem 'faker'
 #Front end gem
 gem "font-awesome-rails"
 gem 'bootstrap', '~> 4.3.1'
+gem 'table_print'
+gem 'activerecord-reset-pk-sequence'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

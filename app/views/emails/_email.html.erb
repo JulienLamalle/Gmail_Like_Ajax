@@ -1,0 +1,8 @@
+<% color = email.read ? "text-light" : "text-primary" %>
+
+<tr id="<%=email.id%>">
+  <td>
+    <%= link_to email.object, email_path(email.id), class: color, remote: true %>
+    <% if email.read %> <i class="fa fa-eye"></i> <% end %>
+  </td>
+</tr>

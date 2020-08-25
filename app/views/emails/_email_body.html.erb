@@ -1,0 +1,12 @@
+<h4><%= email.object %></h4>
+<p><%= email.body %></p>
+
+
+<div class="row justify-content-center">
+    <%= button_to "Supprimer", email_path(email.id), method: "delete", remote: true, class: "btn btn-sm btn-outline-danger mx-3" %>
+    <% if @email.read %>
+        <%= button_to "Marquer comme 'Non lu'", email_path(email.id), method: "put", remote: true, class: "btn btn-sm btn-outline-warning" %>
+    <% else %>
+        <%= button_to "Marquer comme 'lu'", email_path(email.id), method: "put", remote: true, class: "btn btn-sm btn-outline-success" %>
+    <%end %>
+</div>

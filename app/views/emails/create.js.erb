@@ -1,0 +1,2 @@
+document.getElementById("email_list").insertAdjacentHTML("beforeend", "<%= j render 'email', email: @email %>");
+document.getElementById("email_body").innerHTML = "<%= j render 'email_body', email: @email %>";
